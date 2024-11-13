@@ -35,13 +35,19 @@
   /*---------light-------*/
   /**-------------------------------------**/
   /*---Status---*/
-  --success-text-color:#65927F;
-  --info-text-color:#106173;
-  --warning-text-color:#F29F05;
-  --danger-text-color:#AD5350;
-  --success-text-color--hover:#9aaf8d;
-  --info-text-color--hover:#0F8AA6;
-  --warning-text-color--hover:#F2B705;
-  --danger-text-color--hover:#FA847F;
+  --success-color:#65927F;
+  --info-color:#106173;
+  --warning-color:#F29F05;
+  --danger-color:#AD5350;
+  --success-color--hover:#72a38f;
+  --info-color--hover:#0F8AA6;
+  --warning-color--hover:#F2B705;
+  --danger-color--hover:#FA847F;
   /*---Status---*/
+  /*DEFAULT COLORS*/
+  --white-color:#FEFEFE;
+  --pure-white-color:#FFFFFF;
+  --black-color:#444444;
+  --pure-black-color:#000000;
+  /*DEFAULT COLORS*/
 }/*# sourceMappingURL=colors.css.map */

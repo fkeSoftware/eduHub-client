@@ -1,0 +1,93 @@
+:root {
+  /**---STATUS---*/
+  /**---STATUS---*/
+  /**---STYLE---*/
+  /**---STYLE---*/
+}
+:root .default-btn {
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 120px;
+  color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+:root .default-btn:hover {
+  transition: 0.3s ease-in-out;
+}
+:root .borderless-btn {
+  border: none;
+}
+:root .solid-border-btn {
+  border: 2px solid;
+}
+:root .dashed-border-btn {
+  border: 2px dashed;
+}
+:root .dotted-border-btn {
+  border: 2px dotted;
+}
+:root .middle-btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem 0.25rem;
+}
+:root .success-btn {
+  background: var(--success-color);
+}
+:root .success-btn:hover {
+  background: var(--success-color--hover);
+}
+:root .info-btn {
+  background: var(--info-color);
+}
+:root .info-btn:hover {
+  background: var(--info-color--hover);
+}
+:root .warning-btn {
+  background: var(--warning-color);
+}
+:root .warning-btn:hover {
+  background: var(--warning-color--hover);
+}
+:root .danger-btn {
+  background: var(--danger-color);
+}
+:root .danger-btn:hover {
+  background: var(--danger-color--hover);
+}
+:root .light-btn {
+  background: var(--primary-color-dark);
+  color: var(--black-color);
+}
+:root .light-btn:hover {
+  background: var(--primary-color-dark--hover);
+}
+:root .dark-btn {
+  background: var(--black-color);
+}
+:root .dark-btn:hover {
+  background: var(--pure-black-color);
+}
+:root .mute-btn {
+  background: var(--sub-text-color-light);
+  color: var(--secondary-color-light);
+  cursor: not-allowed;
+}
+:root .primary-btn {
+  background: var(--primary-color-light);
+}
+:root .primary-btn:hover {
+  background: var(--primary-color-light--hover);
+}
+:root .secondary-btn {
+  background: var(--sub-head-color-dark);
+  color: var(--text-color-light);
+}
+:root .secondary-btn:hover {
+  background: var(--sub-head-color-dark--hover);
+}
+:root .rounded-btn {
+  border-radius: 0.5rem;
+}/*# sourceMappingURL=buttons.css.map */

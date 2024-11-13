@@ -1,0 +1,100 @@
+:root {
+  .default-btn {
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 120px;
+    color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    &:hover {
+      transition: 0.3s ease-in-out;
+    }
+  }
+  .borderless-btn {
+    border: none;
+  }
+  .solid-border-btn {
+    border: 2px solid;
+  }
+  .dashed-border-btn {
+    border: 2px dashed;
+  }
+  .dotted-border-btn {
+    border: 2px dotted;
+  }
+  .middle-btn {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0.5rem 0.5rem;
+    margin: 0.5rem 0.25rem;
+  }
+  /**---STATUS---*/
+  .success-btn {
+    background: var(--success-color);
+
+    &:hover {
+      background: var(--success-color--hover);
+    }
+  }
+  .info-btn {
+    background: var(--info-color);
+
+    &:hover {
+      background: var(--info-color--hover);
+    }
+  }
+  .warning-btn {
+    background: var(--warning-color);
+
+    &:hover {
+      background: var(--warning-color--hover);
+    }
+  }
+  .danger-btn {
+    background: var(--danger-color);
+
+    &:hover {
+      background: var(--danger-color--hover);
+    }
+  }
+  .light-btn {
+    background: var(--primary-color-dark);
+    color: var(--black-color);
+
+    &:hover {
+      background: var(--primary-color-dark--hover);
+    }
+  }
+  .dark-btn {
+    background: var(--black-color);
+
+    &:hover {
+      background: var(--pure-black-color);
+    }
+  }
+  .mute-btn {
+    background: var(--sub-text-color-light);
+    color: var(--secondary-color-light);
+    cursor: not-allowed;
+  }
+  .primary-btn {
+    background: var(--primary-color-light);
+    &:hover {
+      background: var(--primary-color-light--hover);
+    }
+  }
+  .secondary-btn {
+    background: var(--sub-head-color-dark);
+    color: var(--text-color-light);
+    &:hover {
+      background: var(--sub-head-color-dark--hover);
+    }
+  }
+  /**---STATUS---*/
+  /**---STYLE---*/
+  .rounded-btn {
+    border-radius: 0.5rem;
+  }
+  /**---STYLE---*/
+}

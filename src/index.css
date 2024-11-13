@@ -1,5 +1,6 @@
 @import url("./styles/colors/colors.css");
 @import url("./styles/buttons/buttons.css");
+@import url("./styles/typografy/typografy.css");
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

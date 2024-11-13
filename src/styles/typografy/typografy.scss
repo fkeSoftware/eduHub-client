@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  --first-head-font-size: 32px;
+  --sub-head-font-size: 20px;
+  --text-font-size: 14px;
+  --small-text-font-size: 11px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+  .first-head {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: var(--first-head-font-size);
+  }
+  .sub-head {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: var(--sub-head-font-size);
+  }
+  .text {
+    font-weight: 500;
+    font-size: var(--text-font-size);
+    font-family: var(--font-body);
+  }
+  .small-text {
+    font-weight: 500;
+    font-size: var(--small-text-font-size);
+    font-family: var(--font-body);
+  }
+  .text-light-mode {
+    font-size: var(--text-font-size);
+    color: var(--text-color-dark);
+    &:hover {
+      color: var(--text-color-dark--hover);
+    }
+  }
+  .text-dark-mode {
+    font-size: var(--text-font-size);
+    color: var(--text-color-light);
+    &:hover {
+      color: var(--text-color-light--hover);
+    }
+  }
+  .small-text-light-mode {
+    color: var(--sub-text-color-light);
+    &:hover {
+      color: var(--sub-text-color-light--hover);
+    }
+  }
+  .small-text-dark-mode {
+    color: var(--text-color-light);
+    &:hover {
+      color: var(--text-color-light--hover);
+    }
+  }
+  .header-dark-mode {
+    color: var(--sub-text-color-dark);
+    &:hover {
+      color: var(--header-color-dark--hover);
+    }
+  }
+  .header-light-mode {
+    color: var(--header-color-light);
+    &:hover {
+      color: var(--sub-text-color-dark--hover);
+    }
+  }
+  .sub-head-dark-mode {
+    color: var(--sub-head-color-dark);
+    &:hover {
+      color: var(--sub-head-color-dark--hover);
+    }
+  }
+  .sub-head-light-mode {
+    color: var(--sub-head-color-light);
+    &:hover {
+      color: var(--sub-head-color-light--hover);
+    }
+  }
+}

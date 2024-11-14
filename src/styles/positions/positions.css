@@ -1,0 +1,126 @@
+:root .text-center {
+  text-align: center;
+}
+:root .text-left {
+  text-align: left;
+}
+:root .text-right {
+  text-align: right;
+}
+:root .text-justify {
+  text-align: justify;
+}
+:root .absolute {
+  position: absolute;
+}
+:root .fixed {
+  position: fixed;
+}
+:root .relative {
+  position: relative;
+}
+:root .justify-center {
+  justify-content: center;
+}
+:root .justify-left {
+  justify-content: left;
+}
+:root .justify-right {
+  justify-content: right;
+}
+:root .justify-start {
+  justify-content: start;
+}
+:root .justify-end {
+  justify-content: end;
+}
+:root .justify-flex-start {
+  justify-content: flex-start;
+}
+:root .justify-flex-end {
+  justify-content: flex-end;
+}
+:root .justify-first-baseline {
+  justify-content: first baseline;
+}
+:root .justify-last-baseline {
+  justify-content: last baseline;
+}
+:root .justify-space-around {
+  justify-content: space-around;
+}
+:root .justify-space-between {
+  justify-content: space-between;
+}
+:root .justify-space-evenly {
+  justify-content: space-evenly;
+}
+:root .align-i-center {
+  align-items: center;
+}
+:root .align-i-start {
+  align-items: start;
+}
+:root .align-i-end {
+  align-items: end;
+}
+:root .align-i-f-start {
+  align-items: flex-start;
+}
+:root .align-i-f-end {
+  align-items: flex-end;
+}
+:root .align-i-self-start {
+  align-items: self-start;
+}
+:root .align-i-self-end {
+  align-items: self-end;
+}
+:root .align-i-first {
+  align-items: first baseline;
+}
+:root .align-i-last {
+  align-items: last baseline;
+}
+:root .align-i-normal {
+  align-items: normal;
+}
+:root .align-i-stretch {
+  align-items: stretch;
+}
+:root .align-c-center {
+  align-content: center;
+}
+:root .align-c-left {
+  align-content: left;
+}
+:root .align-c-right {
+  align-content: right;
+}
+:root .align-c-start {
+  align-content: start;
+}
+:root .align-c-end {
+  align-content: end;
+}
+:root .align-c-flex-start {
+  align-content: flex-start;
+}
+:root .align-c-flex-end {
+  align-content: flex-end;
+}
+:root .align-c-first-baseline {
+  align-content: first baseline;
+}
+:root .align-c-last-baseline {
+  align-content: last baseline;
+}
+:root .align-c-space-around {
+  align-content: space-around;
+}
+:root .align-c-space-between {
+  align-content: space-between;
+}
+:root .align-c-space-evenly {
+  align-content: space-evenly;
+}/*# sourceMappingURL=positions.css.map */

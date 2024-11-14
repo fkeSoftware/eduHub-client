@@ -1,0 +1,130 @@
+:root {
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .text-justify {
+    text-align: justify;
+  }
+
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-left {
+    justify-content: left;
+  }
+  .justify-right {
+    justify-content: right;
+  }
+  .justify-start {
+    justify-content: start;
+  }
+  .justify-end {
+    justify-content: end;
+  }
+  .justify-flex-start {
+    justify-content: flex-start;
+  }
+  .justify-flex-end {
+    justify-content: flex-end;
+  }
+  .justify-first-baseline {
+    justify-content: first baseline;
+  }
+  .justify-last-baseline {
+    justify-content: last baseline;
+  }
+  .justify-space-around {
+    justify-content: space-around;
+  }
+  .justify-space-between {
+    justify-content: space-between;
+  }
+  .justify-space-evenly {
+    justify-content: space-evenly;
+  }
+  .align-i-center {
+    align-items: center;
+  }
+  .align-i-start {
+    align-items: start;
+  }
+  .align-i-end {
+    align-items: end;
+  }
+  .align-i-f-start {
+    align-items: flex-start;
+  }
+  .align-i-f-end {
+    align-items: flex-end;
+  }
+  .align-i-self-start {
+    align-items: self-start;
+  }
+  .align-i-self-end {
+    align-items: self-end;
+  }
+  .align-i-first {
+    align-items: first baseline;
+  }
+  .align-i-last {
+    align-items: last baseline;
+  }
+  .align-i-normal {
+    align-items: normal;
+  }
+  .align-i-stretch {
+    align-items: stretch;
+  }
+  .align-c-center {
+    align-content: center;
+  }
+  .align-c-left {
+    align-content: left;
+  }
+  .align-c-right {
+    align-content: right;
+  }
+  .align-c-start {
+    align-content: start;
+  }
+  .align-c-end {
+    align-content: end;
+  }
+  .align-c-flex-start {
+    align-content: flex-start;
+  }
+  .align-c-flex-end {
+    align-content: flex-end;
+  }
+  .align-c-first-baseline {
+    align-content: first baseline;
+  }
+  .align-c-last-baseline {
+    align-content: last baseline;
+  }
+  .align-c-space-around {
+    align-content: space-around;
+  }
+  .align-c-space-between {
+    align-content: space-between;
+  }
+  .align-c-space-evenly {
+    align-content: space-evenly;
+  }
+}

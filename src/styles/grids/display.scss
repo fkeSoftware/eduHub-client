@@ -1,0 +1,42 @@
+:root {
+  .d-block {
+    display: block;
+  }
+  .d-flex {
+    display: flex;
+  }
+  .d-grid {
+    display: grid;
+  }
+  .d-none{
+    display: none;
+  }
+  .d-table {
+    display: table;
+  }
+  .d-i-block {
+    display: inline-block;
+  }
+  .d-i-flex {
+    display: inline-flex;
+  }
+
+  .grid-column-one {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-column-two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-column-three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-column-four {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-column-percent-25 {
+    grid-template-columns: 25% 75%;
+  }
+  .grid-column-percent-15 {
+    grid-template-columns: 15% 85%;
+  }
+}

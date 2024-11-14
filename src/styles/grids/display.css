@@ -1,0 +1,39 @@
+:root .d-block {
+  display: block;
+}
+:root .d-flex {
+  display: flex;
+}
+:root .d-grid {
+  display: grid;
+}
+:root .d-none {
+  display: none;
+}
+:root .d-table {
+  display: table;
+}
+:root .d-i-block {
+  display: inline-block;
+}
+:root .d-i-flex {
+  display: inline-flex;
+}
+:root .grid-column-one {
+  grid-template-columns: repeat(1, 1fr);
+}
+:root .grid-column-two {
+  grid-template-columns: repeat(2, 1fr);
+}
+:root .grid-column-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+:root .grid-column-four {
+  grid-template-columns: repeat(4, 1fr);
+}
+:root .grid-column-percent-25 {
+  grid-template-columns: 25% 75%;
+}
+:root .grid-column-percent-15 {
+  grid-template-columns: 15% 85%;
+}/*# sourceMappingURL=display.css.map */

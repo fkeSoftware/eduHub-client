@@ -1,4 +1,6 @@
 :root {
+  --primary-bg-dark-mode:#9cbcb7;
+  --primary-bg-light-mode:#f5f5f5;
   /*---------dark-------*/
   --primary-color-dark: #E5DED1;
   --secondary-color-dark: #9AB2A2;

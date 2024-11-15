@@ -5,7 +5,7 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <>
-      <div className="component-layout footer-layout fixed">
+      <div className="component-layout footer-layout fixed text-center">
         <div className="sub-head">Footer</div>
       </div>
     </>

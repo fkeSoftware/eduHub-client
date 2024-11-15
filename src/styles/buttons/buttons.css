@@ -90,4 +90,9 @@
 }
 :root .rounded-btn {
   border-radius: 0.5rem;
+}
+:root .circle-btn {
+  border-radius: 50%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85em;
 }/*# sourceMappingURL=buttons.css.map */

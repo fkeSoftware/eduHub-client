@@ -32,7 +32,7 @@
     font-family: var(--font-body);
   }
   .small-text {
-    font-weight: 500;
+    font-weight: 400;
     font-size: var(--small-text-font-size);
     font-family: var(--font-body);
   }
@@ -85,5 +85,8 @@
     &:hover {
       color: var(--sub-head-color-light--hover);
     }
+  }
+  .text-success{
+    color:var(--success-color);
   }
 }

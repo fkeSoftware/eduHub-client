@@ -1,3 +1,201 @@
-.navbar-layout {
-  background: var(--primary-color-dark);
+.navbar {
+  background-color: var(--primary-bg-light-mode);
+  color: var(--text-color-light);
+  box-shadow: 0 2px 4px var(--sub-head-color-light);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar__container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40% 40% 2%;
+  padding: 0 0.5rem;
+}
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color-light);
+}
+.navbar__links {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+}
+.navbar__links a {
+  text-decoration: none;
+  color: var(--text-color-light);
+  transition: color 0.3s, transform 0.3s, opacity 0.3s;
+  position: relative;
+}
+.navbar__links a:hover {
+  color: var(--primary-color-light--hover);
+}
+.navbar__links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color-light);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: right;
+}
+.navbar__links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.navbar__links a.bold {
+  font-weight: bold;
+}
+.navbar__links.active {
+  display: flex;
+  position: absolute;
+  top: 64px;
+  right: 0.5rem;
+  width: 40%;
+  background-color: var(--primary-bg-light-mode);
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 10px var(--sub-head-color-light);
+  border-radius: 0.5rem;
+  text-align: right;
+  z-index: 1001;
+  animation: slideDown 0.5s ease-out;
+}
+.navbar__links__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.navbar__links__close:hover {
+  color: var(--primary-color-light--hover);
+}
+.navbar__toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-color-light);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.navbar__toggle:hover {
+  color: var(--primary-color-light--hover);
+}
+.navbar__profile {
+  right: 1rem;
+}
+.navbar__profile-toggle {
+  background: none;
+  border: none;
+  color: var(--text-color-light);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.navbar__profile-toggle:hover {
+  color: var(--primary-color-light--hover);
+}
+.navbar__profile-menu {
+  top: 50px;
+  right: 0;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--primary-bg-light-mode);
+  box-shadow: 0 2px 10px var(--sub-head-color-light);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  z-index: 100;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideDown 0.5s ease-out forwards;
+}
+.navbar__profile-menu a {
+  text-decoration: none;
+  color: var(--text-color-light);
+  padding: 0.5rem 0;
+  transition: color 0.3s;
+}
+.navbar__profile-menu a:hover {
+  color: var(--primary-color-light--hover);
+}
+.navbar__profile-menu__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.navbar__profile-menu__close:hover {
+  color: var(--primary-color-light--hover);
+}
+@media (max-width: 768px) {
+  .navbar__container {
+    grid-template-columns: 80% 4% 4%;
+    padding: 0 0.5rem;
+  }
+  .navbar__links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar__toggle {
+    display: block;
+  }
+  .navbar__profile-menu {
+    right: 10px;
+  }
+}
+.navbar.dark-mode {
+  background-color: var(--primary-bg-dark-mode);
+  color: var(--text-color-dark);
+}
+.navbar.dark-mode__logo {
+  color: var(--primary-color-dark);
+}
+.navbar.dark-mode__links a {
+  color: var(--text-color-dark);
+}
+.navbar.dark-mode__links a:hover {
+  color: var(--primary-color-dark--hover);
+}
+.navbar.dark-mode__links.active {
+  background-color: var(--primary-bg-dark-mode);
+}
+.navbar.dark-mode__profile-toggle {
+  color: var(--text-color-dark);
+}
+.navbar.dark-mode__profile-toggle:hover {
+  color: var(--primary-color-dark--hover);
+}
+.navbar.dark-mode__profile-menu {
+  background-color: var(--primary-bg-dark-mode);
+}
+.navbar.dark-mode__profile-menu a {
+  color: var(--text-color-dark);
+}
+.navbar.dark-mode__profile-menu a:hover {
+  color: var(--primary-color-dark--hover);
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar__links a.bold {
+  font-weight: bold;
 }/*# sourceMappingURL=navbar.css.map */

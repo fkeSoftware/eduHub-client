@@ -123,4 +123,7 @@
 }
 :root .align-c-space-evenly {
   align-content: space-evenly;
+}
+:root .gap-1rem {
+  gap: 1rem;
 }/*# sourceMappingURL=positions.css.map */

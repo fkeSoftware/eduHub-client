@@ -1,0 +1,9 @@
+.card-layout {
+  background: var(--white-color);
+  margin: 0;
+  padding: 0.75rem;
+}
+
+.rounded-card {
+  border-radius: 0.5rem;
+}/*# sourceMappingURL=cards.css.map */

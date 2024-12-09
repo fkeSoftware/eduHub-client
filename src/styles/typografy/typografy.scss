@@ -16,6 +16,9 @@
   h6 {
     font-family: var(--font-heading);
   }
+  a,li,p,span{
+    text-decoration: none;
+  }
   .first-head {
     font-family: var(--font-heading);
     font-weight: 700;

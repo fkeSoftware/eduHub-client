@@ -4,4 +4,5 @@ export {default as TermsOfUse } from "./Legal/TermsOfUse"
 export {default as Navbar } from "./Navbar/Navbar"
 export {default as Sidebar } from "./Sidebar/Sidebar"
 export {default as Footer } from "./Footer/Footer"
+export {default as Clock } from "./Clock/Clock"
 

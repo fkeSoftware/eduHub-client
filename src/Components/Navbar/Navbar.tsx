@@ -3,13 +3,12 @@ import { CgProfile } from "react-icons/cg";
 import { NavLink, Link, useLocation } from "react-router-dom"; 
 import "./navbar.css";
 import logo from "../../assets/fke-logo-light.png";
+import Clock from "../Clock/Clock";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
   
-  const location = useLocation(); // Aktif URL'yi almak için useLocation kullanıyoruz
-
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
@@ -33,36 +32,25 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="navbar">
+    <header className="navbar d-grid grid-column-percent-12">
+      <div><Clock/></div>
       <div className="navbar__container w-100 justify-space-between">
         <div className="navbar__logo w-100 align-i-center d-flex">
           <img src={logo} className="w64" alt="logo" />
           EduHub
         </div>
         <nav
-          className={`justify-space-around navbar__links ${isMenuOpen ? "active" : ""}`}
+          className={`justify-flex-end gap-5 navbar__links ${isMenuOpen ? "active" : ""}`}
         >
-          {/* Link ile düzenlendi */}
+         
           <NavLink 
-            to="/" // anasayfa linki
+            to="/"
             className={({ isActive }) => (isActive ? "bold text-success" : "")}
           >
             Home
           </NavLink>
           <NavLink 
-            to="/about" // about sayfası
-            className={({ isActive }) => (isActive ? "bold text-success" : "")}
-          >
-            About
-          </NavLink>
-          <NavLink 
-            to="/courses" // courses sayfası
-            className={({ isActive }) => (isActive ? "bold text-success" : "")}
-          >
-            Courses
-          </NavLink>
-          <NavLink 
-            to="/contact" // contact sayfası
+            to="/contact"
             className={({ isActive }) => (isActive ? "bold text-success" : "")}
           >
             Contact

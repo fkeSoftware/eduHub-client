@@ -1,7 +1,7 @@
 .sidebar-layout {
   background: var(--secondary-color-dark);
   grid-template-rows: 10% 80% 10%;
-  max-height: 920px;
+  max-height: 778px;
 }
 .sidebar-layout__user {
   margin-top: 1rem;
@@ -41,5 +41,5 @@
   visibility: visible;
 }
 .sidebar-layout__action {
-  margin-top: 1rem;
+  margin-top: 2.25rem;
 }/*# sourceMappingURL=sidebar.css.map */

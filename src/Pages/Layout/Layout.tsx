@@ -8,7 +8,7 @@ const Layout = (props: Props) => {
   return (
     <>
       <Navbar />
-      <div className="core-layout d-grid grid-column-percent-15">
+      <div className="core-layout d-grid grid-column-percent-12">
         <Sidebar />
         <div>
           <Router />

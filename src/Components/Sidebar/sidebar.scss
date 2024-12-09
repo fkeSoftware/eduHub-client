@@ -1,7 +1,7 @@
 .sidebar-layout {
   background: var(--secondary-color-dark);
   grid-template-rows: 10% 80% 10%;
-  max-height: 778px;
+  max-height: 850px;
   &__user {
     margin-top: 1rem;
     .profile-sidebar {
@@ -43,7 +43,13 @@
       }
     }
   }
-  &__action{
-    margin-top:2.25rem;
+  &__action {
+    margin-top: 2.5rem;
+    a{
+      &:hover {
+        color: var(--danger-color)!important;
+        transition: 0.3s ease-in;
+      }
+    }
   }
 }

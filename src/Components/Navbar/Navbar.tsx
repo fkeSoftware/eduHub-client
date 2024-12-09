@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="navbar d-grid grid-column-percent-12">
-      <div><Clock/></div>
+      <div className="clock__container"><Clock/></div>
       <div className="navbar__container w-100 justify-space-between">
         <div className="navbar__logo w-100 align-i-center d-flex">
           <img src={logo} className="w64" alt="logo" />

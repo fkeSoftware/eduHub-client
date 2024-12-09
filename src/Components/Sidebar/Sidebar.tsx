@@ -60,7 +60,7 @@ const Sidebar = () => {
         ))}
       </div>
       <div className="sidebar-layout__action text-right">
-        <Link to="" className="first-head text-warning"><RiShutDownLine /></Link>
+        <Link to="" className="first-head text-success"><RiShutDownLine /></Link>
       </div>
     </div>
   );

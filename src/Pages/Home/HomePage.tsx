@@ -1,5 +1,8 @@
 import React from "react";
 import "./homePage.css";
+import first from "./first.png";
+import motif from "./motif.png";
+import sewing from "./sewing.png";
 type Props = {};
 
 const HomePage = (props: Props) => {

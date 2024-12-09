@@ -1,0 +1,78 @@
+/*
+.logo{
+    width: 1000px;
+    justify-content: center;
+    margin: 10rem 12rem ;
+    display: flex;
+    padding: 4rem;
+    border:2px solid transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    .png{
+        width:128px;
+        filter: brightness(1.8) saturate(0.2) hue-rotate(200deg);
+        z-index: 9;
+    }
+    .back{
+        display: none;
+        width: 200px;
+        height: 150px;
+        border:3px dashed #8f9aaf;
+        position: absolute;
+        left:46rem;
+        top:14rem;
+        z-index: 0;
+        border-radius: 25px;
+        transform: rotate(45deg);
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+   
+    .brand{
+    font-size: 96px;
+    //filter: brightness(1.8) saturate(0.2) hue-rotate(200deg);
+    color:rgb(128, 77, 77);
+    line-height: 1.25em;
+    }
+    .madeByText{
+        text-align: right;
+        margin-left: 8rem;
+        font-size: 26px;
+        font-family: "Doto", sans-serif;
+        color: #9cbcb7;
+        //filter: brightness(1.8) saturate(0.2) hue-rotate(200deg);
+        font-weight: 800;
+        letter-spacing: 0.25em;
+        line-height: 0.02em;
+        
+    }
+ 
+}
+.motif{
+    position: absolute;
+    top:24rem;
+    left:43.5rem;
+    //left:43.5rem;
+    z-index: 0;
+    //width: 164px;
+    width: 164px;
+    transform: rotate(-10deg);
+    //transform: rotateY(180deg);
+     
+ }
+ .sewing{
+    width: 240px;
+    position: absolute;
+    top:20px;
+    display: none;
+ }
+*/
+ {/*<div className="logo d-flex">
+          <img className="png" src={first} alt="first" />
+
+          <div className="back"></div>
+          <div>
+            <p className="brand montecarlo-regular">Gümüş Dikiş</p>
+            <span className="madeByText">MADE BY SEYDA</span>
+          </div>
+        </div>
+        <img className="motif" src={motif} alt="first" />
+        <img className="sewing" src={sewing} alt="first" />*/}

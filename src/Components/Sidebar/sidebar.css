@@ -16,7 +16,7 @@
 }
 .sidebar-layout__link__container {
   position: relative;
-  padding: 1rem;
+  padding: 1rem 0.25rem;
 }
 .sidebar-layout__link__container .icon {
   font-size: 36px;

@@ -1,3 +1,45 @@
 .sidebar-layout {
   background: var(--secondary-color-dark);
+  grid-template-rows: 10% 80% 10%;
+  max-height: 920px;
+}
+.sidebar-layout__user {
+  margin-top: 1rem;
+}
+.sidebar-layout__user .profile-sidebar {
+  background: transparent;
+  border-radius: 50%;
+}
+.sidebar-layout__user .profile-sidebar img {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.sidebar-layout__link__container {
+  position: relative;
+  padding: 1rem;
+}
+.sidebar-layout__link__container .icon {
+  font-size: 36px;
+  color: var(--success-color);
+}
+.sidebar-layout__link__container .title {
+  margin-bottom: -0.5rem;
+}
+.sidebar-layout__link__submenu {
+  margin-left: 0.5rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(50px);
+  visibility: hidden;
+  transition: opacity 0.75s linear, transform 0.75s ease;
+}
+.sidebar-layout__link__submenu.is-visible {
+  max-height: 260px;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+.sidebar-layout__action {
+  margin-top: 1rem;
 }/*# sourceMappingURL=sidebar.css.map */

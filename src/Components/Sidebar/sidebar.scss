@@ -1,3 +1,49 @@
-.sidebar-layout{
-    background:var(--secondary-color-dark) ;
+.sidebar-layout {
+  background: var(--secondary-color-dark);
+  grid-template-rows: 10% 80% 10%;
+  max-height: 920px;
+  &__user {
+    margin-top: 1rem;
+    .profile-sidebar {
+      background: transparent;
+      border-radius: 50%;
+      img {
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      }
+    }
+  }
+  &__link {
+    &__container {
+      position: relative;
+      padding: 1rem;
+      .icon {
+        font-size: 36px;
+        color: var(--success-color);
+      }
+      .title {
+        margin-bottom: -0.5rem;
+      }
+    }
+    &__submenu {
+      margin-left: 0.5rem;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateX(50px);
+      visibility: hidden;
+      transition: opacity 0.75s linear, transform 0.75s ease;
+
+      &.is-visible {
+        max-height: 260px;
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+      }
+    }
+  }
+  &__action{
+    margin-top:1rem;
+  }
 }

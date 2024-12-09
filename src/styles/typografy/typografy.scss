@@ -6,6 +6,7 @@
   --first-head-font-size: 32px;
   --sub-head-font-size: 20px;
   --text-font-size: 14px;
+  --big-text-font-size: 15px;
   --small-text-font-size: 11px;
 
   h1,
@@ -53,6 +54,14 @@
       color: var(--text-color-light--hover);
     }
   }
+  .big-text-dark-mode {
+    font-size: var(--big-text-font-size)!important;
+    color: var(--text-color-light);
+    font-weight: 700;
+    &:hover {
+      color: var(--text-color-light--hover);
+    }
+  }
   .small-text-light-mode {
     color: var(--sub-text-color-light);
     &:hover {
@@ -91,5 +100,8 @@
   }
   .text-success{
     color:var(--success-color);
+  }
+  .italic{
+    font-style: italic;
   }
 }

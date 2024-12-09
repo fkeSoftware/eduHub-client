@@ -39,4 +39,10 @@
   .grid-column-percent-15 {
     grid-template-columns: 15% 85%;
   }
+  .f-direction-column{
+    flex-direction: column;
+  }
+  .f-direction-row{
+    flex-direction: row;
+  }
 }

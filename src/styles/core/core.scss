@@ -8,19 +8,15 @@
   overflow: hidden;
   display: flex;
   flex-direction: column; 
-
 }
 .component-layout {
   margin: 0;
   padding: 0.5rem;
-
-  
 }
 .scrollable-layout{
   padding: 1rem;
   overflow-y: auto!important; 
   overflow-x: hidden!important; 
-  max-height: calc(80vh - 1rem);
-  
+  max-height: calc(75vh - 1rem);
   flex-grow: 1;
 }

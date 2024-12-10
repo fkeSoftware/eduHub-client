@@ -19,6 +19,8 @@
   }
   a,li,p,span{
     text-decoration: none;
+  }p{
+    margin-bottom:0;
   }
   .first-head {
     font-family: var(--font-heading);

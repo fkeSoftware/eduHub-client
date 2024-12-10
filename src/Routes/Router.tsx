@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Home, LegalPages } from "../Pages";
+import { AddUser, Home, LegalPages, UpdateUser, Users } from "../Pages";
 import { CookiePolicy, PrivacyPolicy, TermsOfUse } from "../Components";
 
 const Router = () => {
@@ -9,6 +9,13 @@ const Router = () => {
       <Route path="/" element={<Home />} />
       <Route path="*" element={<Home />} />
       
+      <Route path="/users" element={<Users />}>
+          <Route path="user-list" element={<Users />} />
+          <Route path="add-user" element={<AddUser />} />
+          <Route path="update-user" element={<UpdateUser />} />
+           
+        </Route>
+
       <Route path="/legal" element={<LegalPages />}>
           <Route path="cookie-policy" element={<CookiePolicy />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />

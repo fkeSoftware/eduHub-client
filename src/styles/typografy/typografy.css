@@ -19,6 +19,9 @@
 :root a, :root li, :root p, :root span {
   text-decoration: none;
 }
+:root p {
+  margin-bottom: 0;
+}
 :root .first-head {
   font-family: var(--font-heading);
   font-weight: 700;

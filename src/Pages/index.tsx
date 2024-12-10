@@ -1,3 +1,6 @@
 export {default as Home } from "./Home/HomePage"
 export {default as Layout } from "./Layout/Layout"
 export {default as LegalPages } from "./Legal/LegalPage"
+export {default as Users } from "./Users/UserList"
+export {default as AddUser } from "./Users/AddUser"
+export {default as UpdateUser } from "./Users/UpdateUser"

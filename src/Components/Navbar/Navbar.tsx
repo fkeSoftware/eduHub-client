@@ -61,6 +61,7 @@ const Navbar: React.FC = () => {
           <button
             className="navbar__profile-toggle borderless-btn middle-btn circle-btn light-btn"
             onClick={toggleProfileMenu}
+            title="profile"
           >
             <CgProfile />
           </button>

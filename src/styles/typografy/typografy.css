@@ -105,4 +105,7 @@
 }
 :root .italic {
   font-style: italic;
+}
+:root .letter-spacing-005 {
+  letter-spacing: 0.05em;
 }/*# sourceMappingURL=typografy.css.map */

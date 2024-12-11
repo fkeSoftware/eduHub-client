@@ -12,6 +12,7 @@ import {
   TableInstance,
   UseSortByInstanceProps,
 } from "react-table";
+import { Link } from "react-router-dom";
 
 type User = {
   id: number;
@@ -135,15 +136,16 @@ const UserList = () => {
 
   return (
     <div className="component-layout scrollable-layout d-flex f-direction-column gap-2">
-      <div className="card-layout rounded-card shadow-card d-flex f-direction-row justify-space-evenly align-i-center">
-        <p className="sub-head header-light-mode">USERS</p>
+      <div className="card-layout rounded-card shadow-card d-grid align-i-center grid-column-percent-90">
+        <p className="sub-head header-light-mode text-center letter-spacing-005">USER LIST</p>
         <div className="button__container d-flex f-direction-row align-i-center">
-          <button
+          <Link
             type="button"
             className="default-btn borderless-btn primary-btn small-btn rounded-btn"
+            to="/add-user"
           >
             <FiPlusCircle /> Add New User
-          </button>
+          </Link>
         </div>
       </div>
       <div className="card-layout rounded-card shadow-card d-flex f-direction-row justify-space-evenly align-i-center">

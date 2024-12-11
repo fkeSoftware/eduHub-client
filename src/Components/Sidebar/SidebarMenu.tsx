@@ -28,7 +28,7 @@ export const menuItems: MenuItem[] = [
     icon: <FiUsers />,
     title: "Users",
     links: [
-      { path: "/users/user-list", label: "User List" },
+      { path: "user-list", label: "User List" },
       { path: "/permissions", label: "Permissions" },
     ],
   },

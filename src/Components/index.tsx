@@ -1,3 +1,4 @@
+export {default as ReactTable } from "./Tables/ReactTable"
 export {default as CookiePolicy } from "./Legal/CookiePolicy"
 export {default as PrivacyPolicy } from "./Legal/PrivacyPolicy"
 export {default as TermsOfUse } from "./Legal/TermsOfUse"

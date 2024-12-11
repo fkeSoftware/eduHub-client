@@ -1,24 +1,23 @@
 import React, { useEffect, useState } from "react";
-import { useTable, useSortBy, Column, Row } from "react-table";
+import { ReactTable } from "../../Components";
+import { Column, Row } from "react-table";
 import ReactSwitch from "react-switch";
 import { UserModel } from "../../models/users/UserModel";
 import UserService from "../../services/UserService";
 import { MdModeEdit, MdDeleteSweep } from "react-icons/md";
 import { FiPlusCircle } from "react-icons/fi";
-import { FaSortAlphaDown, FaSortAlphaUp } from "react-icons/fa";
-import { LuArrowDownUp } from "react-icons/lu";
 import { Link } from "react-router-dom";
 import { BiDetail } from "react-icons/bi";
 
-const UserList = () => {
 
+const UserList = () => {
   const [users, setUsers] = useState<UserModel[]>([]);
 
-  const getUsers = () => {
+  useEffect(() => {
     UserService.getAllUsers()
       .then((res) => setUsers(res.data))
       .catch((err) => console.log(err));
-  };
+  }, []);
 
   const handleStatusChange = (userId: number, status: boolean) => {
     setUsers((prevUsers) =>
@@ -31,13 +30,8 @@ const UserList = () => {
   };
 
   const handleEdit = (userId: number) => {
-    console.log(`update user , ID: ${userId}`);
+    console.log(`update user, ID: ${userId}`);
   };
-
-  useEffect(() => {
-    getUsers();
-  }, []);
-
 
   const columns: Column<UserModel>[] = React.useMemo(
     () => [
@@ -94,15 +88,7 @@ const UserList = () => {
     ],
     []
   );
-
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    useTable(
-      {
-        columns,
-        data: users,
-      },
-      useSortBy
-    );
+  
 
   return (
     <div className="padding-1 component-layout scrollable-layout d-flex f-direction-column gap-2">
@@ -121,58 +107,7 @@ const UserList = () => {
         </div>
       </div>
       <div className="card-layout rounded-card shadow-card d-flex f-direction-row justify-space-evenly align-i-center">
-        <table {...getTableProps()}>
-          <thead>
-            {headerGroups.map((headerGroup) => {
-              const { key, ...restHeaderGroupProps } = headerGroup.getHeaderGroupProps();
-              return (
-                <tr key={key} {...restHeaderGroupProps}>
-                  {headerGroup.headers.map((column) => {
-                    const { key, ...rest } = column.getHeaderProps(column.getSortByToggleProps());
-                    return (
-                      <th key={column.id} {...rest} className="sub-head sub-head-light-mode">
-                        {column.Header === "Actions" ? (
-                          <span>{column.render("Header")}</span>
-                        ) : (
-                          <span>
-                            {column.isSorted ? (
-                              column.isSortedDesc ? (
-                                <FaSortAlphaDown />
-                              ) : (
-                                <FaSortAlphaUp />
-                              )
-                            ) : (
-                              <LuArrowDownUp />
-                            )}{" "}
-                            {column.render("Header")}
-                          </span>
-                        )}
-                      </th>
-                    );
-                  })}
-                </tr>
-              );
-            })}
-          </thead>
-          <tbody {...getTableBodyProps()}>
-            {rows.map((row) => {
-              prepareRow(row);
-              const { key, ...restRowProps } = row.getRowProps();
-              return (
-                <tr key={row.id} {...restRowProps}>
-                  {row.cells.map((cell) => {
-                    const { key, ...restCellProps } = cell.getCellProps();
-                    return (
-                      <td key={cell.column.id} {...restCellProps} className="text text-dark-mode">
-                        {cell.render("Cell")}
-                      </td>
-                    );
-                  })}
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+      <ReactTable columns={columns} data={users} />
       </div>
     </div>
   );

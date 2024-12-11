@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { ReactTable } from "../../Components";
+import { ReactTable, TableActions, IsActiveSwitch } from "../../Components";
 import { Column, Row } from "react-table";
-import ReactSwitch from "react-switch";
 import { UserModel } from "../../models/users/UserModel";
 import UserService from "../../services/UserService";
-import { MdModeEdit, MdDeleteSweep } from "react-icons/md";
 import { FiPlusCircle } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { BiDetail } from "react-icons/bi";
-
 
 const UserList = () => {
   const [users, setUsers] = useState<UserModel[]>([]);
@@ -44,51 +40,24 @@ const UserList = () => {
         Header: "Status",
         accessor: "status",
         Cell: ({ row }: { row: Row<UserModel> }) => (
-          <ReactSwitch
+          <IsActiveSwitch
             checked={row.original.status}
             onChange={(checked) => handleStatusChange(row.original.id, checked)}
-            offColor="#cac8c8"
-            onColor="#72a38f"
-            offHandleColor="#f5f5f5"
-            onHandleColor="#f5f5f5"
-            uncheckedIcon={false}
-            checkedIcon={false}
-            height={20}
-            width={48}
           />
         ),
       },
       {
         Header: "Actions",
         Cell: ({ row }: { row: Row<UserModel> }) => (
-          <div className="d-flex gap-2">
-            <button
-              title="Detail"
-              className="iconic-btn default-btn borderless-btn rounded-btn info-btn"
-            >
-              <BiDetail />
-            </button>
-            <button
-              title="Edit"
-              className="iconic-btn default-btn borderless-btn rounded-btn warning-btn"
-              onClick={() => handleEdit(row.original.id)}
-            >
-              <MdModeEdit />
-            </button>
-            <button
-              title="Delete"
-              className="iconic-btn default-btn borderless-btn rounded-btn danger-btn"
-              onClick={() => handleDelete(row.original.id)}
-            >
-              <MdDeleteSweep />
-            </button>
-          </div>
+          <TableActions
+            onEdit={() => handleEdit(row.original.id)}
+            onDelete={() => handleDelete(row.original.id)}
+          />
         ),
       },
     ],
     []
   );
-  
 
   return (
     <div className="padding-1 component-layout scrollable-layout d-flex f-direction-column gap-2">
@@ -107,7 +76,7 @@ const UserList = () => {
         </div>
       </div>
       <div className="card-layout rounded-card shadow-card d-flex f-direction-row justify-space-evenly align-i-center">
-      <ReactTable columns={columns} data={users} />
+        <ReactTable columns={columns} data={users} />
       </div>
     </div>
   );

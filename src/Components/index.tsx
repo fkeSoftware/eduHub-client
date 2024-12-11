@@ -1,4 +1,6 @@
 export {default as ReactTable } from "./Tables/ReactTable"
+export {default as TableActions } from "./Tables/TableActions"
+export {default as IsActiveSwitch } from "./Switchers/IsActiveSwitch"
 export {default as CookiePolicy } from "./Legal/CookiePolicy"
 export {default as PrivacyPolicy } from "./Legal/PrivacyPolicy"
 export {default as TermsOfUse } from "./Legal/TermsOfUse"

@@ -6,6 +6,10 @@
 .rounded-card {
   border-radius: 0.5rem;
 }
-.shadow-card{
+.shadow-card {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.fit-card {
+  width: 100%;
+  max-width: fit-content;
 }

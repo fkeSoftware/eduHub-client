@@ -7,6 +7,7 @@ import { MdModeEdit, MdDeleteSweep } from "react-icons/md";
 import { FiPlusCircle } from "react-icons/fi";
 import { FaSortAlphaDown, FaSortAlphaUp } from "react-icons/fa";
 import { LuArrowDownUp } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const UserList = () => {
   const [users, setUsers] = useState<UserModel[]>([]);
@@ -100,12 +101,13 @@ const UserList = () => {
           USER LIST
         </p>
         <div className="button__container d-flex f-direction-row align-i-center justify-flex-end padding-1">
-          <button
+          <Link
             type="button"
             className="default-btn borderless-btn primary-btn small-btn rounded-btn"
+            to="/add-user"
           >
             <FiPlusCircle /> Add New User
-          </button>
+          </Link>
         </div>
       </div>
       <div className="card-layout rounded-card shadow-card d-flex f-direction-row justify-space-evenly align-i-center">

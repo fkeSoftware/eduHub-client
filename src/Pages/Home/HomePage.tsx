@@ -1,8 +1,6 @@
 import React from "react";
 import "./homePage.css";
-import first from "./first.png";
-import motif from "./motif.png";
-import sewing from "./sewing.png";
+
 type Props = {};
 
 const HomePage = (props: Props) => {
@@ -16,7 +14,10 @@ const HomePage = (props: Props) => {
               <p className="text text-dark-mode text-center">
                 card title example
               </p>
-              <img src="https://via.placeholder.com/360x360.png?text=FKE+EduHub" />
+              <img
+                alt="sample-img"
+                src="https://via.placeholder.com/360x360.png?text=FKE+EduHub"
+              />
               <p className="small-text small-text-dark-mode">
                 card content example
               </p>
@@ -25,7 +26,10 @@ const HomePage = (props: Props) => {
               <p className="text text-dark-mode text-center">
                 card title example
               </p>
-              <img src="https://via.placeholder.com/360x360.png?text=FKE+EduHub" />
+              <img
+                alt="sample-img"
+                src="https://via.placeholder.com/360x360.png?text=FKE+EduHub"
+              />
               <p className="small-text small-text-dark-mode">
                 card content example
               </p>
@@ -34,7 +38,7 @@ const HomePage = (props: Props) => {
               <p className="text text-dark-mode text-center">
                 card title example
               </p>
-              <img src="https://via.placeholder.com/360x360.png?text=FKE+EduHub" />
+              <img alt="sample-img" src="https://via.placeholder.com/360x360.png?text=FKE+EduHub" />
               <p className="small-text small-text-dark-mode">
                 card content example
               </p>
@@ -43,7 +47,10 @@ const HomePage = (props: Props) => {
               <p className="text text-dark-mode text-center">
                 card title example
               </p>
-              <img src="https://via.placeholder.com/360x360.png?text=FKE+EduHub" />
+              <img
+                alt="sample-img"
+                src="https://via.placeholder.com/360x360.png?text=FKE+EduHub"
+              />
               <p className="small-text small-text-dark-mode">
                 card content example
               </p>
@@ -52,7 +59,10 @@ const HomePage = (props: Props) => {
               <p className="text text-dark-mode text-center">
                 card title example
               </p>
-              <img src="https://via.placeholder.com/360x360.png?text=FKE+EduHub" />
+              <img
+                alt="sample-img"
+                src="https://via.placeholder.com/360x360.png?text=FKE+EduHub"
+              />
               <p className="small-text small-text-dark-mode">
                 card content example
               </p>
@@ -61,7 +71,10 @@ const HomePage = (props: Props) => {
               <p className="text text-dark-mode text-center">
                 card title example
               </p>
-              <img src="https://via.placeholder.com/360x360.png?text=FKE+EduHub" />
+              <img
+                alt="sample-img"
+                src="https://via.placeholder.com/360x360.png?text=FKE+EduHub"
+              />
               <p className="small-text small-text-dark-mode">
                 card content example
               </p>

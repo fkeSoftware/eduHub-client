@@ -1,0 +1,25 @@
+table {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.75rem;
+}
+table td, table th {
+  padding: 0.5rem;
+}
+table thead tr {
+  border-bottom: 2px solid var(--secondary-color-dark);
+}
+table tbody tr {
+  background: transparent;
+}
+table tbody tr:hover {
+  background: var(--secondary-color-dark--hover);
+  transition: 0.3s ease;
+}
+table tbody tr:nth-child(even) {
+  background: var(--primary-bg-light-mode);
+}
+table tbody tr:nth-child(even):hover {
+  background: var(--secondary-color-dark--hover);
+  transition: 0.3s ease;
+}/*# sourceMappingURL=table.css.map */

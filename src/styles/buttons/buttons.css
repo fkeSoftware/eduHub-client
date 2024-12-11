@@ -39,6 +39,12 @@
   padding: 0.5rem 0.5rem;
   width: 100%;
 }
+:root .iconic-btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.5rem 0.5rem;
+  max-width: 40px;
+}
 :root .success-btn {
   background: var(--success-color);
 }

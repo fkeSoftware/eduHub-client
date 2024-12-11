@@ -1,0 +1,31 @@
+table{
+    width: 100%;
+    padding: 1rem;
+    margin:0.75rem;
+    td,th{
+        padding: 0.5rem;
+      }
+    thead{
+        tr{
+            border-bottom: 2px solid var(--secondary-color-dark);
+        }
+    }
+    tbody{
+        tr{
+            
+            background: transparent;
+            &:hover{
+                background: var(--secondary-color-dark--hover); 
+                transition: 0.3s ease;
+            }
+            &:nth-child(even) {
+                background: var(--primary-bg-light-mode); 
+                &:hover{
+                    background: var(--secondary-color-dark--hover);
+                    transition: 0.3s ease;
+                }
+              }
+             
+        }
+    }
+}

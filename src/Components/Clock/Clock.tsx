@@ -14,8 +14,7 @@ const Clock: React.FC = () => {
   const hours = time.getHours() % 12;
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
-  console.log(hours);
-  console.log(minutes);
+
   return (
     <div className="clock">
       {" "}

@@ -2,12 +2,24 @@ import React from "react";
 import { FormikInput } from "../../Components";
 import { Field, Form, Formik } from "formik";
 import { Link } from "react-router-dom";
+import UserService from "../../services/UserService";
+import { AddUserModel } from "../../models/users/AddUserModel";
 
 type Props = {};
 
 const AddUser = (props: Props) => {
-  const handleSubmit = async () => {};
+  const handleSubmit = async (userRequest: AddUserModel) => {
+    await UserService.addUser(userRequest)
+      .then((res) => {
+        console.log(userRequest);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   const userValidation = {};
+
   return (
     <div className="scrollable-layout d-flex f-direction-column align-i-center justify-center ">
       <div className="card-layout rounded-card shadow-card fit-card d-flex f-direction-column align-i-center justify-flex-start">
@@ -27,6 +39,8 @@ const AddUser = (props: Props) => {
               password: "",
               phoneNumber: "",
               birthDate: "",
+              //cityId: 0,
+              //districtId: 0,
             }}
             onSubmit={handleSubmit}
             validateOnBlur={true}
@@ -38,45 +52,55 @@ const AddUser = (props: Props) => {
                     name="firstName"
                     label="First Name"
                     placeHolder="Enter Your First Name"
-                  ></FormikInput>
+                  />
                   <FormikInput
                     name="lastName"
                     label="Last Name"
                     placeHolder="Enter Your Last Name"
-                  ></FormikInput>
+                  />
                   <FormikInput
                     name="userName"
                     label="Username"
                     placeHolder="Enter Your Username"
-                  ></FormikInput>
+                  />
                   <FormikInput
                     name="birthDate"
                     label="Birthdate"
                     placeHolder="Enter Your Birthdate"
                     type="date"
-                  ></FormikInput>
+                  />
                   <FormikInput
                     name="email"
                     label="Email"
                     placeHolder="Enter Your Email"
                     type="email"
-                  ></FormikInput>
+                  />
                   <FormikInput
                     name="phoneNumber"
                     label="Phone Number"
                     placeHolder="Enter Your Phone Number"
-                  ></FormikInput>
+                  />
                   <FormikInput
                     name="idNo"
                     label="ID No"
                     placeHolder="Enter Your ID No"
-                  ></FormikInput>
+                  />
                   <FormikInput
                     name="password"
                     label="Password"
                     placeHolder="Enter Your Password"
                     type="password"
-                  ></FormikInput>
+                  />
+                  {/*<FormikInput
+                    name="districtId"
+                    label="districtId"
+                    placeHolder="Enter Your districtId"
+                  />
+                  <FormikInput
+                    name="cityId"
+                    label="cityId"
+                    placeHolder="Enter Your cityId"
+                  />*/}
                 </div>
                 <div className="action__container d-flex f-direction-row justify-space-evenly align-i-center text-center padding-1 w100">
                   <button

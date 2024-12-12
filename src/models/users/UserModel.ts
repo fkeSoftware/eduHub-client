@@ -7,9 +7,9 @@ export interface UserModel {
   idNo: null | string;
   password: string;
   phoneNumber: string;
-  birthDate: string;
-  cityId: number;
-  districtId: number;
-  address: string;
+  birthDate?: string;
+  cityId?: number;
+  districtId: 1;
+  address?: string;
   status:boolean;
 }
